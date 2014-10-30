@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-	int num=0;
+	int num = 0;
 	cout << "Enter a number for the matrix's rows and columns.\n";
 	cin >> num;
 
@@ -17,11 +17,13 @@ int main()
 	}
 
 	// The Matrix (works for 0<num<10, otherwise the matrix is not aligned. I don't have nerves to do it :D .. )
+
+
 	for (int i = 1; i < num * num + 1; i++)
 	{
 		if (i <= 9)
 		{
-			cout << "0" << i<<" ";
+			cout << "0" << i << " ";
 		}
 		else
 		{
