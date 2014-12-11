@@ -11,14 +11,14 @@ void spiral_print(int end_row, int end_col, int a[Row][Col])
 	while (start_row < end_row && start_col < end_col)
 	{
 		// Print the first row from the remaining rows 
-		for (int i = start_col; i < end_col; ++i)
+		for (int i = start_col; i < end_col; i++)
 		{
 			cout << a[start_row][i] << " ";
 		}
 		start_row++;
 
 		// Print the last column from the remaining columns 
-		for (int i = start_row; i < end_row; ++i)
+		for (int i = start_row; i < end_row; i++)
 		{
 			cout << a[i][end_col - 1] << " ";
 		}
@@ -27,7 +27,7 @@ void spiral_print(int end_row, int end_col, int a[Row][Col])
 		// Print the last row from the remaining rows 
 		if (start_row < end_row)
 		{
-			for (int i = end_col - 1; i >= start_col; --i)
+			for (int i = end_col - 1; i >= start_col; i--)
 			{
 				cout << a[end_row - 1][i] << " ";
 			}
@@ -37,7 +37,7 @@ void spiral_print(int end_row, int end_col, int a[Row][Col])
 		// Print the first column from the remaining columns 
 		if (start_col < end_col)
 		{
-			for (int i = end_row - 1; i >= start_row; --i)
+			for (int i = end_row - 1; i >= start_row; i--)
 			{
 				cout << a[i][start_col] << " ";
 			}
