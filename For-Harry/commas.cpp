@@ -13,7 +13,7 @@ int main()
 
 	for (int i = 0; i < len; i++)
 	{
-		if (sentence[i] == ' ' && sentence [i+1] != ' ')
+		if (sentence[i] == ' ' && sentence[i + 1] != ' ')
 		{
 			int comma = i + 1;
 			for (int k = len + 1; k >= comma; k--)
@@ -32,3 +32,4 @@ int main()
 	_getch();
 	return 0;
 }
+No newline at end of file
