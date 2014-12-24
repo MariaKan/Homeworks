@@ -11,7 +11,29 @@ int main()
 	cin.getline(sentence, 10000);
 	int len = strlen(sentence);
 
-	for (int i = 0; i < len; i++)
+	int d = len; 
+	int m = 0;
+
+	//No comma afret last element
+	if (sentence[len] == ' ')
+	{
+		while (sentence[d] == ' ')
+		{
+			d--;
+		}
+	}
+
+	//No comma before first element
+	if (sentence[m] == ' ')
+	{
+		while (sentence[m] == ' ')
+		{
+			m++;
+		}
+	}
+
+	//The whole shit
+	for (int i = m; i < d - 1; i++)
 	{
 		 if (sentence[i] == ' ' && sentence[i + 1] != ' ')
 		{
@@ -40,6 +62,8 @@ int main()
 				 i++;
 			 }
 		 }
+
+		 
 
 	}
 
