@@ -25,6 +25,21 @@ int main()
 			len++;
 			i++;
 		}
+		 if (sentence[i] == ' ' && sentence[i + 1] == ' ')
+		 {
+			 int comma = i;
+			 for (int k = len + 1; k >= comma + 1; k--)
+			 {
+				 sentence[k] = sentence[k - 1];
+			 }
+			 sentence[comma] = ',';
+
+			 for (int z = i+1; sentence[i+1] == ' '; z++)
+			 {	 
+				 len++;
+				 i++;
+			 }
+		 }
 
 	}
 
